@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIT305 2.1P: Unit Converter App"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="10dp"
+        tools:ignore="HardcodedText" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/source_unit_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source Unit"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/source_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/unit_types"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/destination_unit_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Unit"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/destination_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/unit_types" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"/>
+
+    <EditText
+        android:id="@+id/value_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter a value to convert" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/result_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Converted Value" />
+
+    <TextView
+        android:id="@+id/result_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
